@@ -1,0 +1,10 @@
+{
+  "radius_m": 1500.0,
+  "n_health": 15,
+  "n_schools": 77,
+  "coverage_pct_before": 76.6,
+  "mean_dist_m": 1271.0,
+  "n_uncovered": 18,
+  "recommended_sites": 3,
+  "coverage_pct_after": 93.5
+}

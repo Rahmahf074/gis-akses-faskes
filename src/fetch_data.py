@@ -3,21 +3,44 @@ Data (c) OpenStreetMap contributors, lisensi ODbL.
 BBOX = (south, west, north, east) - PERIKSA ulang di peta, sesuaikan area studi.
 """
 import argparse
+import time
 from pathlib import Path
 
 import geopandas as gpd
 import requests
 from shapely.geometry import Point
 
-URL = "https://overpass-api.de/api/interpreter"
 DEFAULT_BBOX = (-3.92, 102.19, -3.70, 102.36)  # sekitar Kota Bengkulu (perkiraan)
+HEADERS = {"User-Agent": "gis-akses-faskes/1.0 (student project; github.com/Rahmahf074/gis-akses-faskes)"}
+ENDPOINTS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter",
+]
+
+
+def _post(q):
+    """Coba semua server, ulangi 3 putaran dengan jeda bertambah."""
+    last = None
+    for attempt in range(3):
+        for url in ENDPOINTS:
+            try:
+                r = requests.post(url, data={"data": q}, headers=HEADERS, timeout=120)
+                if r.status_code == 200:
+                    print(f"OK: {url}")
+                    return r
+                last = f"{url} -> HTTP {r.status_code}"
+            except requests.RequestException as e:
+                last = f"{url} -> {e}"
+            print("retry:", last)
+        time.sleep(10 * (attempt + 1))
+    raise RuntimeError(f"Semua server Overpass gagal. Terakhir: {last}")
 
 
 def query(bbox, tag_regex):
     s, w, n, e = bbox
     q = f'[out:json][timeout:90];nwr["amenity"~"^({tag_regex})$"]({s},{w},{n},{e});out center;'
-    r = requests.post(URL, data={"data": q}, timeout=120)
-    r.raise_for_status()
+    r = _post(q)
     rows = []
     for el in r.json()["elements"]:
         lat = el.get("lat") or el.get("center", {}).get("lat")

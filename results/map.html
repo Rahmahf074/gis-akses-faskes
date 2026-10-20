@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e45a271f5511cfed527a13c1e4f41f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9e45a271f5511cfed527a13c1e4f41f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9e45a271f5511cfed527a13c1e4f41f5 = L.map(
+                "map_9e45a271f5511cfed527a13c1e4f41f5",
+                {
+                    center: [-3.8071709740259743, 102.28003018831168],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb31049b5844abc76119a32c21b1773f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fb31049b5844abc76119a32c21b1773f.addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            var circle_marker_677063ae2430a26b355372c32c422c0a = L.circleMarker(
+                [-3.808556199999995, 102.2662877],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_677063ae2430a26b355372c32c422c0a.bindTooltip(
+                `<div>
+                     Faskes: Puskesmas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54b5908fbe9fcda7c47d925899439825 = L.circleMarker(
+                [-3.801050599999994, 102.2665029],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_54b5908fbe9fcda7c47d925899439825.bindTooltip(
+                `<div>
+                     Faskes: Puskesmas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60ac297470aafa713f1e9a8b3ca09e2b = L.circleMarker(
+                [-3.7576971000000023, 102.2632883],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_60ac297470aafa713f1e9a8b3ca09e2b.bindTooltip(
+                `<div>
+                     Faskes: Rumah Sakit Tino Galo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb4908f987738bf3e300f2e8f106e7ec = L.circleMarker(
+                [-3.7966883999999994, 102.25668990000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_cb4908f987738bf3e300f2e8f106e7ec.bindTooltip(
+                `<div>
+                     Faskes: Puskesmas pembantu Pasar Melintang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_175dc67974d0df191b6765948c4a56f4 = L.circleMarker(
+                [-3.797244200000003, 102.2668379],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_175dc67974d0df191b6765948c4a56f4.bindTooltip(
+                `<div>
+                     Faskes: Rumah Sakit HD Kota Bengkulu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32b2bd29a3223692f1d728fb6b6b0a11 = L.circleMarker(
+                [-3.792670999999994, 102.2551222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_32b2bd29a3223692f1d728fb6b6b0a11.bindTooltip(
+                `<div>
+                     Faskes: Rumah Sakit Bhayangkara Tingkat IV
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52dc85ce3cacbd283660141b69317cf3 = L.circleMarker(
+                [-3.817638400000008, 102.3096057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_52dc85ce3cacbd283660141b69317cf3.bindTooltip(
+                `<div>
+                     Faskes: Rumah Sakit DKT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b8ed5ecf4aa03ad6d67ad64a1a56987 = L.circleMarker(
+                [-3.8351973000000026, 102.3146146],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_1b8ed5ecf4aa03ad6d67ad64a1a56987.bindTooltip(
+                `<div>
+                     Faskes: RSUD Dr. M. Yunus Bengkulu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_13363d8f34ca02f3c456c4d4ca41b056 = L.circleMarker(
+                [-3.8279792999999986, 102.3126303],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_13363d8f34ca02f3c456c4d4ca41b056.bindTooltip(
+                `<div>
+                     Faskes: Klinik Ummi Mandiri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34a0f2b04374951a13303c2b9a2023a0 = L.circleMarker(
+                [-3.757617099999993, 102.2633521],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_34a0f2b04374951a13303c2b9a2023a0.bindTooltip(
+                `<div>
+                     Faskes: Rumah Sakit Tino Galo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ad69d59ee0655ad2ce55ee10aeddb02 = L.circleMarker(
+                [-3.8233285000000037, 102.280068],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_4ad69d59ee0655ad2ce55ee10aeddb02.bindTooltip(
+                `<div>
+                     Faskes: Puskesmas Kuala Lempuing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a1000aaa062e887ba3f7c96ed98be9c = L.circleMarker(
+                [-3.7876157999999926, 102.2554638],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_6a1000aaa062e887ba3f7c96ed98be9c.bindTooltip(
+                `<div>
+                     Faskes: Puskesmas Pembantu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e94de1154e43c18ac479c9a59c2eef84 = L.circleMarker(
+                [-3.797151799999995, 102.2705212],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_e94de1154e43c18ac479c9a59c2eef84.bindTooltip(
+                `<div>
+                     Faskes: Rumah Sakit Rafflesia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5372b0fa5ce3810d27d2ba2deb56b432 = L.circleMarker(
+                [-3.8007389999999996, 102.2714483],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_5372b0fa5ce3810d27d2ba2deb56b432.bindTooltip(
+                `<div>
+                     Faskes: Rumah Sakit Tiara Sella
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e469bc0238a9611b8646557546d25754 = L.circleMarker(
+                [-3.7669725999999963, 102.31054410000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_e469bc0238a9611b8646557546d25754.bindTooltip(
+                `<div>
+                     Faskes: Puskesmas Pembantu Bentiring
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a31e5ec704b53c84920c81b0536943e5 = L.circleMarker(
+                [-3.8226843000000046, 102.2802721],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_a31e5ec704b53c84920c81b0536943e5.bindTooltip(
+                `<div>
+                     SMA Negeri 1 - 75 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9054f53e70fe3e76e172892365ef3cbc = L.circleMarker(
+                [-3.793308200000008, 102.24994],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_9054f53e70fe3e76e172892365ef3cbc.bindTooltip(
+                `<div>
+                     SMP Sint Carolus - 580 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27e1729fd944f92f99f0695f886a1581 = L.circleMarker(
+                [-3.7917289000000074, 102.2530948],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_27e1729fd944f92f99f0695f886a1581.bindTooltip(
+                `<div>
+                     SMP Negeri 9 - 248 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_208672da429a379c3ccb406318ffba43 = L.circleMarker(
+                [-3.7899752000000007, 102.2489467],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_208672da429a379c3ccb406318ffba43.bindTooltip(
+                `<div>
+                     SD Negeri 11 - 748 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9809f8214b3b8b4f40063a26cb6eb2be = L.circleMarker(
+                [-3.7899461999999966, 102.2500128],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_9809f8214b3b8b4f40063a26cb6eb2be.bindTooltip(
+                `<div>
+                     SD Negeri 1 - 643 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_950d8bcffafea91b4b3af67a4c0b650b = L.circleMarker(
+                [-3.7904037000000006, 102.2609434],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_950d8bcffafea91b4b3af67a4c0b650b.bindTooltip(
+                `<div>
+                     SMP Negeri 3 - 683 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f69af95eef6d6f38019bdfc4afc66501 = L.circleMarker(
+                [-3.7921863000000053, 102.2613473],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f69af95eef6d6f38019bdfc4afc66501.bindTooltip(
+                `<div>
+                     SMP Negeri 1 - 694 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_334f0802bf45bb34fc1446242de9ab1a = L.circleMarker(
+                [-3.798027899999998, 102.2781275],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_334f0802bf45bb34fc1446242de9ab1a.bindTooltip(
+                `<div>
+                     TK Auladunna - 801 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_846db63ee3428287dedd732018ec1a13 = L.circleMarker(
+                [-3.7808170999999953, 102.2631471],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_846db63ee3428287dedd732018ec1a13.bindTooltip(
+                `<div>
+                     SMP Negeri 7 - 1138 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cefc81a8b3a1bdcf86eb500efab4d8f0 = L.circleMarker(
+                [-3.7776036000000044, 102.2638497],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_cefc81a8b3a1bdcf86eb500efab4d8f0.bindTooltip(
+                `<div>
+                     SD Negeri 57 - 1448 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac58c514822143515c4e9e9569e9eb16 = L.circleMarker(
+                [-3.810462900000009, 102.2770662],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_ac58c514822143515c4e9e9569e9eb16.bindTooltip(
+                `<div>
+                     SD Negeri 32 - 1217 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a50845a343f0ac690e4b97e19323a85a = L.circleMarker(
+                [-3.817558200000002, 102.277744],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_a50845a343f0ac690e4b97e19323a85a.bindTooltip(
+                `<div>
+                     SD Negeri 38 - 689 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db19e3ddc0aef3ba81295bc94d948937 = L.circleMarker(
+                [-3.7885615000000032, 102.2636775],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_db19e3ddc0aef3ba81295bc94d948937.bindTooltip(
+                `<div>
+                     SMPIT Iqra - 919 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ccc70257d73446ee0ff0a3346bee030e = L.circleMarker(
+                [-3.789370000000008, 102.2751034],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_ccc70257d73446ee0ff0a3346bee030e.bindTooltip(
+                `<div>
+                     SD Negeri 50 - 1000 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb5cc144dd216896f62e15761d569323 = L.circleMarker(
+                [-3.7970109999999955, 102.2773214],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_bb5cc144dd216896f62e15761d569323.bindTooltip(
+                `<div>
+                     SDIT Iqra 1 - 756 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc76026bc6e81c965839c462af888da5 = L.circleMarker(
+                [-3.771410500000003, 102.2708239],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_fc76026bc6e81c965839c462af888da5.bindTooltip(
+                `<div>
+                     SD Negeri 68 - 1733 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a88b98b74ba2f99bb176c78085160d0 = L.circleMarker(
+                [-3.7863061000000005, 102.26555320000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_0a88b98b74ba2f99bb176c78085160d0.bindTooltip(
+                `<div>
+                     SD Negeri 3 - 1131 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f692a5037b05ac517eae21c38dd2e871 = L.circleMarker(
+                [-3.7943853000000036, 102.251351],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f692a5037b05ac517eae21c38dd2e871.bindTooltip(
+                `<div>
+                     SD Negeri 47 - 460 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b96ae57ee4939a525ccbd24ec439a31e = L.circleMarker(
+                [-3.8010911999999974, 102.2790184],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_b96ae57ee4939a525ccbd24ec439a31e.bindTooltip(
+                `<div>
+                     SD Negeri 54 - 842 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2442d3b9d79dbd9e085578b9800020c = L.circleMarker(
+                [-3.8058056999999974, 102.28485470000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f2442d3b9d79dbd9e085578b9800020c.bindTooltip(
+                `<div>
+                     SD Negeri 43 - 1592 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e6079d620fb843149a339d5387a28bd = L.circleMarker(
+                [-3.8103175999999954, 102.2784348],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_9e6079d620fb843149a339d5387a28bd.bindTooltip(
+                `<div>
+                     SD Negeri 58 - 1314 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1ace4d258d753be33a9229bdb052a07 = L.circleMarker(
+                [-3.8239192000000015, 102.28545590000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_d1ace4d258d753be33a9229bdb052a07.bindTooltip(
+                `<div>
+                     SD Negeri 44 - 602 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31a5ab608642b811ccb9f4f3733ca3cd = L.circleMarker(
+                [-3.8209469000000063, 102.2791959],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_31a5ab608642b811ccb9f4f3733ca3cd.bindTooltip(
+                `<div>
+                     SMP Negeri 12 - 281 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80c3209273f7729b572585c4d514dd84 = L.circleMarker(
+                [-3.7979828000000024, 102.2597351],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_80c3209273f7729b572585c4d514dd84.bindTooltip(
+                `<div>
+                     SMP Negeri 13 - 368 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_441f794b8c69d789e2aef5d5f90130ec = L.circleMarker(
+                [-3.7959163999999923, 102.260445],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_441f794b8c69d789e2aef5d5f90130ec.bindTooltip(
+                `<div>
+                     SMA Pembangunan - 426 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48ca3ec791a591d24322fbc6f83e7600 = L.circleMarker(
+                [-3.8006779000000037, 102.27923],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_48ca3ec791a591d24322fbc6f83e7600.bindTooltip(
+                `<div>
+                     SD Negeri 51 - 865 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f099a930193cd539e83d582bf05b59f1 = L.circleMarker(
+                [-3.8033744000000054, 102.2822056],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f099a930193cd539e83d582bf05b59f1.bindTooltip(
+                `<div>
+                     Sekolah Alam Mahira - 1231 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f4ea632d55ee6f247a6534ed9221cbd = L.circleMarker(
+                [-3.8560604000000023, 102.3465129],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_0f4ea632d55ee6f247a6534ed9221cbd.bindTooltip(
+                `<div>
+                     MAN 2 BKL - 4231 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_beb0165b05e6b285b4da603e8c8aa638 = L.circleMarker(
+                [-3.7964486999999942, 102.2848723],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_beb0165b05e6b285b4da603e8c8aa638.bindTooltip(
+                `<div>
+                     SDIT Iqro’ 2 - 1566 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9845e72f7fcff8a151321d764974e5c = L.circleMarker(
+                [-3.7982995999999942, 102.2750835],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_c9845e72f7fcff8a151321d764974e5c.bindTooltip(
+                `<div>
+                     Pesantren Qur’an Al Fida’ - 486 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbfd123816838890dd7256c6887a1c0f = L.circleMarker(
+                [-3.9195920999999925, 102.3111275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_cbfd123816838890dd7256c6887a1c0f.bindTooltip(
+                `<div>
+                     SMK 6 - 9347 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd8830c71e063df889996a402c5ca6db = L.circleMarker(
+                [-3.9179329999999966, 102.3103952],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_dd8830c71e063df889996a402c5ca6db.bindTooltip(
+                `<div>
+                     SMPN 25 Seluma - 9167 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c451da42b7a12338835b445a146d8a5 = L.circleMarker(
+                [-3.9179008999999945, 102.3111999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_2c451da42b7a12338835b445a146d8a5.bindTooltip(
+                `<div>
+                     SD Negeri 05 Seluma - 9160 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07a8abc2c86029628a056989e6bc5e6b = L.circleMarker(
+                [-3.804857599999994, 102.2657311],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_07a8abc2c86029628a056989e6bc5e6b.bindTooltip(
+                `<div>
+                     SD Negeri 27 Bengkulu - 414 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_600e983dbf430aba211d463c5b5fbee3 = L.circleMarker(
+                [-3.799094700000006, 102.2648183],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_600e983dbf430aba211d463c5b5fbee3.bindTooltip(
+                `<div>
+                     SD Negeri 2 Bengkulu - 286 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a1ba5a8da74171924beb3199f26347f = L.circleMarker(
+                [-3.8008940000000044, 102.2668033],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_9a1ba5a8da74171924beb3199f26347f.bindTooltip(
+                `<div>
+                     SD Negeri 34 Bengkulu - 38 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bcee504c0b0b53dc0ccf5b2ea987ef7 = L.circleMarker(
+                [-3.828041400000002, 102.2903422],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_4bcee504c0b0b53dc0ccf5b2ea987ef7.bindTooltip(
+                `<div>
+                     Ponpes TQ Salafiyah An Nur - 1255 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3201b0bc180c77a2c014df8c114a9b4e = L.circleMarker(
+                [-3.829222700000003, 102.3166997],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_3201b0bc180c77a2c014df8c114a9b4e.bindTooltip(
+                `<div>
+                     Mi Humairah - 473 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4840c5ba57bfb6c766f85209441b6f7 = L.circleMarker(
+                [-3.7963073000000067, 102.2726481],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f4840c5ba57bfb6c766f85209441b6f7.bindTooltip(
+                `<div>
+                     SMKN 1 KOTA BENGKULU - 254 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2aed8e91b6eebd8c9008fa57fc54b7f = L.circleMarker(
+                [-3.7944177999999997, 102.2514242],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_d2aed8e91b6eebd8c9008fa57fc54b7f.bindTooltip(
+                `<div>
+                     SD Negeri 47 - 454 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_713cbb513f6b1e1819c7a5a718fbb056 = L.circleMarker(
+                [-3.7950392000000077, 102.27326080000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_713cbb513f6b1e1819c7a5a718fbb056.bindTooltip(
+                `<div>
+                     SMP Negeri 2 - 384 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ecc4f9ac0e9c41c1c5725ac0a933a7f = L.circleMarker(
+                [-3.7946616, 102.2719914],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_8ecc4f9ac0e9c41c1c5725ac0a933a7f.bindTooltip(
+                `<div>
+                     SMA Negeri 5 - 320 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d9b814276bfe0ae1ef3e6b47520a363 = L.circleMarker(
+                [-3.7955154999999983, 102.272618],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_9d9b814276bfe0ae1ef3e6b47520a363.bindTooltip(
+                `<div>
+                     SMK Negeri 3 - 295 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6b909de47ba78225362927763327ec5 = L.circleMarker(
+                [-3.8256782000000014, 102.30159840000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_a6b909de47ba78225362927763327ec5.bindTooltip(
+                `<div>
+                     SD 20 - 1252 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33989e4c547ba307ef530ad638e26fb8 = L.circleMarker(
+                [-3.8352762999999923, 102.297573],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_33989e4c547ba307ef530ad638e26fb8.bindTooltip(
+                `<div>
+                     SMA Plus Negeri 7 - 1858 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59a03c3f774bb7147d7441f8cd1279d3 = L.circleMarker(
+                [-3.8336762000000006, 102.2949857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_59a03c3f774bb7147d7441f8cd1279d3.bindTooltip(
+                `<div>
+                     SMP 8 - 2015 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5a29ab82246235cd8f9042ac4b6d4ad = L.circleMarker(
+                [-3.833460200000006, 102.29618300000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f5a29ab82246235cd8f9042ac4b6d4ad.bindTooltip(
+                `<div>
+                     SD 55 - 1926 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32f81d3667ae44f4380100395d625f7d = L.circleMarker(
+                [-3.8199685999999997, 102.2925452],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_32f81d3667ae44f4380100395d625f7d.bindTooltip(
+                `<div>
+                     SMP Negeri 4 - 1436 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6c087c226e7fe8ab94f595ec3c13012 = L.circleMarker(
+                [-3.8202786999999967, 102.2930661],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_a6c087c226e7fe8ab94f595ec3c13012.bindTooltip(
+                `<div>
+                     MAN 1 - 1484 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2da0be287365fd66d9e10b65aa451a34 = L.circleMarker(
+                [-3.8214563999999975, 102.291283],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_2da0be287365fd66d9e10b65aa451a34.bindTooltip(
+                `<div>
+                     SD Negeri 5 - 1264 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4378fa0ebedf6307900d3af2b14e22e = L.circleMarker(
+                [-3.8078207999999965, 102.3025449],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f4378fa0ebedf6307900d3af2b14e22e.bindTooltip(
+                `<div>
+                     SMP Negeri 6 - 1340 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fd75dcca77fd88eca1f8be2780f9d5a = L.circleMarker(
+                [-3.806162499999993, 102.2988799],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_6fd75dcca77fd88eca1f8be2780f9d5a.bindTooltip(
+                `<div>
+                     Pondok Pesantren Darussalam - 1742 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a0802e2ba6eaecae79ce7acad4e5b6b = L.circleMarker(
+                [-3.8284766000000077, 102.312738],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_0a0802e2ba6eaecae79ce7acad4e5b6b.bindTooltip(
+                `<div>
+                     STIKES - 56 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ff70f39a5fba307df904746c506c5fb = L.circleMarker(
+                [-3.770710600000003, 102.2774852],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_3ff70f39a5fba307df904746c506c5fb.bindTooltip(
+                `<div>
+                     SMP Negeri 11 - 2136 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b696972e801db93830126e18df9ddb3f = L.circleMarker(
+                [-3.7611227000000067, 102.2780879],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_b696972e801db93830126e18df9ddb3f.bindTooltip(
+                `<div>
+                     SD Negeri 69 - 1683 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63e1b507f799e1e636eee434d4c9dc58 = L.circleMarker(
+                [-3.822729400000001, 102.2804115],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_63e1b507f799e1e636eee434d4c9dc58.bindTooltip(
+                `<div>
+                      - 77 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cabbb4a7be44cfc71cd759dcef17a85 = L.circleMarker(
+                [-3.8209263000000053, 102.279086],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_5cabbb4a7be44cfc71cd759dcef17a85.bindTooltip(
+                `<div>
+                      - 287 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d052a82a6907e8f85a3e0e5c09534ed9 = L.circleMarker(
+                [-3.808535499999994, 102.2889932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_d052a82a6907e8f85a3e0e5c09534ed9.bindTooltip(
+                `<div>
+                      - 1914 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b4780337829d2c5f58a5161982e5f16 = L.circleMarker(
+                [-3.8046110000000017, 102.2956379],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_0b4780337829d2c5f58a5161982e5f16.bindTooltip(
+                `<div>
+                     SMP Negeri 21 - 2119 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2a4fcf01f4a54396964362f5b201517 = L.circleMarker(
+                [-3.816725100000003, 102.3077127],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f2a4fcf01f4a54396964362f5b201517.bindTooltip(
+                `<div>
+                     SMP Negeri 14 - 233 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_137cce56097a17248d55591ecc9e828e = L.circleMarker(
+                [-3.818060299999998, 102.308292],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_137cce56097a17248d55591ecc9e828e.bindTooltip(
+                `<div>
+                     SMA Negeri 4 Kota Bengkulu - 153 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ebeb82b3fc5c2373a7b9229a81f95c82 = L.circleMarker(
+                [-3.8172927999999926, 102.2810987],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_ebeb82b3fc5c2373a7b9229a81f95c82.bindTooltip(
+                `<div>
+                     SMK Negeri 2 - 678 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4da35cc4eeb40dfba33113d2ae47c47f = L.circleMarker(
+                [-3.848532199999998, 102.31496330000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_4da35cc4eeb40dfba33113d2ae47c47f.bindTooltip(
+                `<div>
+                     SD Negeri 79 - 1476 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_592b0efc6fe52cbbe7e9e60409ca6005 = L.circleMarker(
+                [-3.809386500000006, 102.2695299],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_592b0efc6fe52cbbe7e9e60409ca6005.bindTooltip(
+                `<div>
+                     SMP Negeri 15 - 372 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_155efcb8f6cc9056c8401ba2932b73ec = L.circleMarker(
+                [-3.7957502, 102.28008910000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_155efcb8f6cc9056c8401ba2932b73ec.bindTooltip(
+                `<div>
+                     SD Negeri 62 - 1075 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20560d957dfd496a25c9366a197bf50f = L.circleMarker(
+                [-3.7633179000000063, 102.2946269],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_20560d957dfd496a25c9366a197bf50f.bindTooltip(
+                `<div>
+                     SMP Negeri 17 - 1815 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b74c3e9b80615b337243fa472947b20 = L.circleMarker(
+                [-3.791200599999991, 102.2484091],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_0b74c3e9b80615b337243fa472947b20.bindTooltip(
+                `<div>
+                     Patria Dharma - 764 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_63d6f2ef17a51a40077d4671086bf3ae = L.circleMarker(
+                [-3.7862518999999994, 102.2549614],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_63d6f2ef17a51a40077d4671086bf3ae.bindTooltip(
+                `<div>
+                     paud bustanul athfal - 161 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10ba26e43faf88c09f983235a82658e9 = L.circleMarker(
+                [-3.7887354000000055, 102.2544742],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_10ba26e43faf88c09f983235a82658e9.bindTooltip(
+                `<div>
+                     SD Negeri 4 - 166 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f862b786cecc3447ea48001f0cc2587a = L.circleMarker(
+                [-3.7875425000000025, 102.2555916],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_f862b786cecc3447ea48001f0cc2587a.bindTooltip(
+                `<div>
+                     PAUD El Rindang - 16 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c3f4601b952c91802bd46970b08366c = L.circleMarker(
+                [-3.8172436000000043, 102.3057946],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_3c3f4601b952c91802bd46970b08366c.bindTooltip(
+                `<div>
+                     TK/SD Al-Azhar 50/51 Cabang Bengkulu - 426 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae518dc5b0e7ba87fe7eb8fc86393d92 = L.circleMarker(
+                [-3.7859121000000076, 102.2606294],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_ae518dc5b0e7ba87fe7eb8fc86393d92.bindTooltip(
+                `<div>
+                     SD Negeri 7 Kota Bengkulu - 604 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b22680e61ed379d409accbee44e8b4a = L.circleMarker(
+                [-3.788586399999993, 102.263848],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_0b22680e61ed379d409accbee44e8b4a.bindTooltip(
+                `<div>
+                     SMPIT Iqra - 938 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffba187f6ab743e6a97c3463d6d2bfbb = L.circleMarker(
+                [-3.7837913000000007, 102.2627722],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_ffba187f6ab743e6a97c3463d6d2bfbb.bindTooltip(
+                `<div>
+                     SMA Negeri 6 Bengkulu - 916 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b730abd79b3c72061ef827c2a328d9a = L.circleMarker(
+                [-3.7648687999999972, 102.2832503],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_7b730abd79b3c72061ef827c2a328d9a.bindTooltip(
+                `<div>
+                     Rumah Tahfidz - 2353 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22c447b4f670bd3ef7843b8d6c975f47 = L.circleMarker(
+                [-3.815603199999994, 102.3122896],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_22c447b4f670bd3ef7843b8d6c975f47.bindTooltip(
+                `<div>
+                     SD Negeri 61 Kota Bengkulu - 374 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9062466a8e7aa5d442c718525537caec = L.circleMarker(
+                [-3.766408700000004, 102.2804668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            circle_marker_9062466a8e7aa5d442c718525537caec.bindTooltip(
+                `<div>
+                     Sekolah Alam Langit Biru - 2137 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_23d64d16e5c29aa848cd26679cf1078f = L.marker(
+                [-3.770710600000003, 102.2774852],
+                {
+}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            var icon_989ef1fab517e0bc4aecfa8913af7095 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_23d64d16e5c29aa848cd26679cf1078f.bindTooltip(
+                `<div>
+                     Usulan lokasi (+5 sekolah)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23d64d16e5c29aa848cd26679cf1078f.setIcon(icon_989ef1fab517e0bc4aecfa8913af7095);
+            
+    
+            var marker_863570156bf740f41775d9f8e6cfe83e = L.marker(
+                [-3.808535499999994, 102.2889932],
+                {
+}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            var icon_c655be0f1d352091fa0094ef6ffa5fbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_863570156bf740f41775d9f8e6cfe83e.bindTooltip(
+                `<div>
+                     Usulan lokasi (+5 sekolah)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_863570156bf740f41775d9f8e6cfe83e.setIcon(icon_c655be0f1d352091fa0094ef6ffa5fbb);
+            
+    
+            var marker_37d7b2da8bb1156b2f52d519a64b0a7e = L.marker(
+                [-3.9195920999999925, 102.3111275],
+                {
+}
+            ).addTo(map_9e45a271f5511cfed527a13c1e4f41f5);
+        
+    
+            var icon_97465d7e81a9b1ed017a0a4acaee40fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_37d7b2da8bb1156b2f52d519a64b0a7e.bindTooltip(
+                `<div>
+                     Usulan lokasi (+3 sekolah)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37d7b2da8bb1156b2f52d519a64b0a7e.setIcon(icon_97465d7e81a9b1ed017a0a4acaee40fa);
+            
+</script>
+</html>
